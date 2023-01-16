@@ -3,107 +3,58 @@ import Link from "next/link";
 import Image from "next/image"
 const Footer = () => {
   return (
-    <>
-   <div className="row">
-   <div className="col-12 map-div">
-    <iframe
-                      title='map1'
-                      className="gmap_iframe me-5"
-                      width="100%"
-                      frameBorder={0}
-                      scrolling="no"
-                      marginHeight={0}
-                      marginWidth={0}
-                      height="150px"
-                      src="https://maps.google.com/maps?width=600&height=500&hl=en&q=edify group of companies&t=&z=14&ie=UTF8&iwloc=B&output=embed"
-                    />
-            </div>
+    <>       
+     
+    <footer>
+   <div className="content container">
+     <div className="left-box mx-5">
+     
+       <div className="topic">Company</div>
+       <div><Link className='footer-tag' href="#"> About Us</Link></div>
+       <div><Link className='footer-tag' href="#">Contact Us</Link></div>
+       <div><Link className='footer-tag' href="#">Privcy And Policy</Link></div>
+       <div><Link className='footer-tag' href="#">Disclaimer</Link></div>
+       <div><Link className='footer-tag' href="#">Blogs</Link></div>
+     
+     
+       <div className="lower">
+         <div className="topic">Contact us</div>
+         <div className="phone">
+           <Link className='footer-tag' href="#"><i className=" social-media-icons fas fa-phone-volume"></i>+92-346-7897340</Link>
+         </div>
+         <div className="email">
+           <Link className='footer-tag' href="#"><i className="social-media-icons fas fa-envelope"></i>edifytech4u@gmail.com</Link>
+         </div>
+       </div>
+     </div>
+     <div className="middle box">
+       <div className="topic">Our Services</div>
+       <div><Link className='footer-tag' href="/Converter/TextBinary">Text To Binary</Link></div>
+       <div><Link className='footer-tag' href="/Converter/Binary">Binary To Decimal</Link></div>
+       <div><Link className='footer-tag' href="/Converter/">Hexa To Binary</Link></div>
+       <div><Link className='footer-tag' href="#"></Link></div>
+       <div><Link className='footer-tag' href="#"></Link></div>
+       <div><Link className='footer-tag' href="#"></Link></div>
+     </div>
+     <div className="right box">
+       <div className="topic">Subscribe us</div>
+       <form action="#">
+         <input type="text" placeholder="Enter email address"/>
+         <input type="submit" name="" value="Send"/>
+         <div className="media-icons">
+           <Link href="#"><i className="fab fa-facebook-f social-media-icons"></i></Link>
+           <Link href="#"><i className="fab fa-instagram social-media-icons"></i></Link>
+           <Link href="#"><i className="fab fa-twitter social-media-icons"></i></Link>
+           <Link href="#"><i className="fab fa-youtube social-media-icons"></i></Link>
+           <Link href="#"><i className="fab fa-linkedin-in social-media-icons"></i></Link>
+         </div>
+       </form>
+     </div>
    </div>
-            
-     <div className="foot">
-      {/* <!-- newsletter --> */}
-      
-      {/* <!-- footer content --> */}
-      <div className="footer bg-footer section border-bottom">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-8 col-12 mb-5 mb-lg-0">
-              {/* <!-- logo --> */}
-              <a className="logo-footer" href="index.html"> <h4>DARASGAH</h4></a>
-              <ul className="list-unstyled">
-                <li className="mb-2">
-                3rd Floor, Edify Building, S1/S2, Susan Road, Madina Town, Faisalabad
-                </li>
-                <li className="mb-2">+1 (2) 345 6789</li>
-                <li className="mb-2">+1 (2) 345 6789</li>
-                <li className="mb-2">
-                  <i className="fa-brands fa-facebook p-3"></i>
-                  <i className="fa-brands fa-instagram p-3"></i>
-                  <i className="fa-brands fa-linkedin p-3"></i>
-                </li>
-              </ul>
-              <div className="row">
-            
-          </div>
-            </div>
-            {/* <!-- company --> */}
-            <div className="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
-              <h4 className="text-white mb-5">COMPANY</h4>
-              <ul className="list-unstyled">
-                <li className="mb-3">
-                  <Link className="text-color" href="/aboutus">About Us</Link>
-                </li>
-                <li className="mb-3">
-                  <Link className="text-color" href="/contactus">Contact Us</Link>
-                </li>
-                <li className="mb-3">
-                  <Link className="text-color" href="/privacy">Privacy And Policy</Link>
-                </li>
-                <li className="mb-3">
-                  <Link className="text-color" href="/FAQ">FAQ's</Link>
-                </li>
-              </ul>
-            </div>
-            {/* <!-- links --> */}
-            <div className="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
-              <h4 className="text-white mb-5">Tools</h4>
-              <ul className="list-unstyled">
-                <li className="mb-3">
-                  <a className="text-color" href="/wordtopdf">  Word to Pdf</a>
-                </li>
-                <li className="mb-3">
-                  <a className="text-color" href="/exceltopdf">Excel to Pdf</a>
-                </li>
-                <li className="mb-3">
-                  <a className="text-color" href="/ppttopdf"> PowerPoint to Pdf</a>
-                </li>
-                <li className="mb-3">
-                  <a className="text-color" href="/texttopdf">Text to Pdf</a>
-                </li>
-              </ul>
-            </div>
-        
-           
-            
-          </div>
-        </div>
-      </div>
-      {/* <!-- copyright --> */}
-      <div className="copyright py-4 bg-footer">
-        <div className="container">
-            <div className="text-center w-100">
-              <p className="mb-0 text-light">
-                Copyright
-                <script>
-                  var CurrentYear = new Date().getFullYear();
-                  document.write(CurrentYear);
-                </script>
-                Â© themefisher
-              </p>
-            </div>
-        </div>
-      </div>
-    </div>
+   <div className="bottom">
+     <p>Copyright © 2020 <a href="#">Edify</a> All rights reserved</p>
+   </div>
+ </footer>
     </>
   )
 }

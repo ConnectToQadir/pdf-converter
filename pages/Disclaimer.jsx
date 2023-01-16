@@ -13,7 +13,7 @@ function Disclaimer() {
                         <li className="active">
                             <a href="#1">Disclaimer for Edify Group Of Companies</a>
                         </li>
-                        <li><a href="#2">Disclaimers for Ilovepdf</a></li>
+                        <li><a href="#2">Disclaimers for lovepdf</a></li>
                         <li><a href="#3">Consent</a></li>
                         <li><a href="#4">Update</a></li>
                     </ol>
@@ -23,22 +23,18 @@ function Disclaimer() {
                             <p>
                                 If you require any more information or have any questions about
                                 our site's disclaimer, please feel free to contact us by email
-                                at <a href="edifytech786@gmail.com">edifytech786@gmail.com</a>. Our Disclaimer was generated with the
-                                help of the
-                                <a href="https://www.disclaimergenerator.net/"
-                                >Free Disclaimer Generator</a
-                                >.
+                                at <a href="edifytech4u@gmail.com">edifytech4u@gmail.com</a>. 
                             </p>
                         </div>
                         <div id="2" className="disclaimer-text">
-                            <h1>Disclaimers for Ilovepdf</h1>
+                            <h1>Disclaimers for lovepdf</h1>
                             <p>
-                                All the information on this website - ilovepdf.io - is published
-                                in good faith and for general information purpose only. Ilovepdf
+                                All the information on this website - lovepdf.io - is published
+                                in good faith and for general information purpose only. lovepdf
                                 does not make any warranties about the completeness, reliability
                                 and accuracy of this information. Any action you take upon the
-                                information you find on this website (Ilovepdf), is strictly at
-                                your own risk. Ilovepdf will not be liable for any losses and/or
+                                information you find on this website (lovepdf), is strictly at
+                                your own risk. lovepdf will not be liable for any losses and/or
                                 damages in connection with the use of our website.
                             </p>
 

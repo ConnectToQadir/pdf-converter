@@ -69,8 +69,7 @@ code {
 :root{
   --blueDark:#002858;
   --blueMain:rgb(20 84 149);
-  --blueLight:#febf00;
-  --gray:rgb(207, 207, 207);
+
   --paraFont:'Montserrat', sans-serif;
   --headFont:'Rubik', sans-serif;
   --prosFont:'Mandali', sans-serif;
@@ -184,6 +183,7 @@ button:focus ,input:focus{
   list-style: none;
   float: right;
   margin-bottom: 0;
+  
 }
 
 .NavBar nav .navLinks ul li{
@@ -197,15 +197,15 @@ button:focus ,input:focus{
 .NavBar nav .navLinks ul li a,.haveDropDonw a{
   text-decoration: none;
   color:var(--blueMain);
-  font-size: 13px;
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 600;
   padding:5px;
   margin:0px 8px;
   font-family: var(--paraFont);
 }
 
 .NavBar nav .navLinks ul li a:hover ,.haveDropDonw:hover{
-  color:var(--blueLight);
+  
 }
 
 
@@ -215,7 +215,7 @@ button:focus ,input:focus{
   position: absolute;
   right:28px;
   display: none;
-  top:32px;
+  top:35px;
   cursor: pointer;
 }
 
@@ -251,24 +251,24 @@ button:focus ,input:focus{
 
   .NavBar .barsDiv{
       display:block;
+     
   }
   .navLinks{
       display: none;
+      
+     
   }
 }
 
-.active{
-  background-color: #eee;
-  border:.5px solid #ddd;
-}
+
 
 .dropdown button{
   border:none;
   background-color: #fff;
   font-family:var(--paraFont);
   color: var(--blueMain);
-  font-size: 13px;
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 600;
   margin:0px 8px;
   padding:5px;
 }
@@ -276,14 +276,14 @@ button:focus ,input:focus{
 .dropdown-menu a{
   font-family:var(--paraFont);
   color: var(--blueMain);
-  font-size: 13px;
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 600;
+
 }
 
-.dropdown-menu a:hover{
-  color: var(--blueLight);
+.dropdown-menu a:any-link{
+  background-color: transparent;
 }
-
 .dropdown button:focus{
   border: none;
   outline: none;
@@ -301,65 +301,162 @@ button:focus ,input:focus{
 
 /* Footer Start Css  ========================================================== */
 
-.map-div{
-margin-top: 15rem ;
-overflow: hidden;
-padding: 0;
-}
-.map-div:hover{
-  opacity: 0.75;
-}
-.foot{
+/* Footer Start///////////////////////////////////////////////////////////////////////////// */
 
-  background: rgb(1,49,108);
-  background: linear-gradient(90deg, rgba(1,49,108,1) 10%, rgba(6,1,89,1) 58%);
-}
-.logo-footer{
-  color: white;
-  text-decoration: none;
-
-}
-.logo-footer:focus{
-  color: rgb(237, 80, 24);
-}
-.list-unstyled{
-  color: white;
-}
-.list-unstyled li a{
-  color: white;
-  text-decoration: none;
-}
-
-.foot{
- 
-  position: relative;
-  padding-top: 100px;
-}
-@media (max-width:760px){
-.main{
-  width: 80%;top: -20%;
-}
-} 
-@media (max-width:500px){
-.main{
+footer{
   width: 100%;
-  border-radius: 0;
+  
+  background: rgb(1,49,108);
+  background: linear-gradient(90deg, rgba(1,49,108,1) 25%, rgba(6,1,89,1) 66%);
+  /* margin-top: 15rem; */
 }
+footer .content{
+  max-width: 1350px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
-.input-wrapper{
-position: relative;
+.footer-tag{
+  color: #fff !important;
+  text-decoration: none;
 }
-.footbtn{
-position: absolute;
-top: 18px;
-right: 20px;
+footer .content .box{
+  width: 33%;
+  transition: all 0.4s ease;
+}
+footer .content .topic{
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 16px;
+
+}
+footer .content p{
+  text-align: justify;
+}
+footer .content .lower .topic{
+  margin: 24px 0 5px 0;
+}
+footer .content .lower i{
+  padding-right: 14px;
+  margin: 10px
+
+}
+footer .content .middle{
+  padding-left: 80px;
+}
+footer .content .middle a{
+  line-height: 32px;
+}
+footer .content .right input[type="text"]{
+  height: 45px;
+  width: 100%;
+  outline: none;
+  color: #0c0b0b;
+  background: white;
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: 17px;
+  border: 2px solid #222222;
+  
 }
 
-.map{
-  background-color: #000  rgba(0, 0, 0, 0.5);
-  background-blend-mode: overlay
+footer .content .right input[type="submit"]{
+  height: 42px;
+  width: 100%;
+  font-size: 18px;
+  color: black;
+  background: white;
+  outline: none;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin-top: 12px;
+  border: 2px solid white;
+  transition: all 0.3s ease-in-out;
+}
+.content .right input[type="submit"]:hover{
+  background: none;
+  color:  white;
+  background-color: #222222;
+}
+footer .content .media-icons a{
+  font-size: 16px;
+  height: 40px;
+    width: 44px;
+
+  background-color: white;
+  display: inline-block;
+  text-align: center;
+  line-height: 43px;
+  border-radius: 5px;
+  /* border: 2px solid #222222; */
+  margin: 27px 16px 0 0;
+  transition: all 0.3s ease;
+}
+@media (min-width:593px) and (max-width:950) {
+  .right .box{
+    display: flex;
+    flex-direction: column;
+    text-align: center !important;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.social-media-icons{
+  font-size: 25px;
+}
+.content .media-icons a:hover{
+  border-color: white;
+}
+footer .bottom{
+  width: 100%;
+  text-align: right;
+  color: #d9d9d9;
+  padding: 0 40px 5px 0;
+}
+footer .bottom a{
+  color: white;
+}
+footer a{
+  transition: all 0.3s ease;
+  margin: 0px;
+}
+footer a:hover{
+  color: white;
+}
+.fab{
+  margin: 5px 3px;
+}
+@media (max-width:1100px) {
+  footer .content .middle{
+    padding-left: 50px;
+  }
+}
+@media (max-width:950px){
+  footer .content .box{
+    width: 50%;
+  }
+  .content .right{
+    margin-top: 40px;
+  }
+}
+@media (max-width:560px){
+  footer{
+    position: relative;
+  }
+  footer .content .box{
+    width: 100%;
+    margin-top: 30px;
+  }
+  footer .content .middle{
+    padding-left: 0;
+  }
 }
 
+/* Footer End///////////////////////////////////////////////////////////////////////////// */
 
 /* Footer End Css  ========================================================== */
 
@@ -379,12 +476,13 @@ right: 20px;
   }
   
   .pdf-heding{
-    font-size: 50px !important;
+    font-size: 30px !important;
     font-weight: 600 !important;
     color: #0070fb;
     width: 100%;
     background-color: none;
     text-shadow: -1px 2px 2px rgb(0 0 0 / 7%);
+    margin-top: 20px;
   }
   .number-heading{
     color: white;
@@ -408,28 +506,46 @@ right: 20px;
    
     align-items: center;
     text-align: center;
+    /* margin-bottom: 300px; */
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
    
   }
   .card-main{
-    position: absolute;
-    top: 195px;
+    /* position: absolute; */
+    /* top: 195px; */
+    height: 50vh !important;
+    line-height: 28px;
     border-radius: 20px;
     justify-content: center;
     align-items: center;
     box-shadow: 10px 7px 23px -7px rgba(0,0,0,0.65);
-    margin-bottom: 00px !important;
+    margin: 10px 15px 50px 15px;
+    transition: 0.5s;
   }
-  .card-main-number{
+
+  .card-main:hover{
+    transform: scale(1.03);
+  }
+  /* .card-main-number{
     margin-top: 200px !important;
+  } */
+  .card-container{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   max-width: 90%;
+
   }
-  .row-div{
-   
-  } 
-   @media only screen and (max-width: 400px) {
+  
+  
+   /* @media only screen and (max-width: 400px) {
     .row-div {
       margin: 0%;
     }
-  }
+  } */
   
   .border-gradient{
     background: radial-gradient(circle at 100% 100%, #ffffff 0, #ffffff 17px, transparent 17px) 0% 0%/24px 24px no-repeat,
@@ -440,12 +556,73 @@ right: 20px;
     linear-gradient(#ffffff, #ffffff) 50% 50%/calc(100% - 48px) calc(100% - 14px) no-repeat,
     linear-gradient(90deg, #0070fb 0%, #060159 100%);
   border-radius: 24px;
-  padding: 24px;
+  padding: 3px;
   box-sizing: border-box;
   position: relative;
   }
+  /* animation */
+  /* @property --rotate {
+    syntax: "<angle>";
+    initial-value: 132deg;
+    inherits: false;
+  }
+
+
+  .border-gradient::before {
+    content: "";
+    width: 104%;
+    height: 102%;
+    border-radius: 8px;
+    background-image: linear-gradient(
+      var(--rotate)
+      , #5ddcff, #3c67e3 43%, #4e00c2);
+      position: absolute;
+      z-index: -1;
+      top: -1%;
+      left: -2%;
+      animation: spin 1s linear infinite;
+  }
   
+  .border-gradient::after {
+    position: absolute;
+    content: "";
+    top: calc(var(--card-height) / 6);
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    transform: scale(0.8);
+    filter: blur(calc(var(--card-height) / 6));
+    background-image: linear-gradient(
+      var(--rotate)
+      , #5ddcff, #3c67e3 43%, #4e00c2);
+      opacity: 1;
+    transition: opacity 1s;
+    animation: spin 0.5s linear infinite;
+  }
   
+  @keyframes spin {
+    0% {
+      --rotate: 0deg;
+    }
+    100% {
+      --rotate: 360deg;
+    }
+  }
+ */
+
+  /* animation */
+
+   
+  .card-main .border-gradient .card-body p{
+    padding: 10px 10px
+  }
+  .card-main .border-gradient .card-body h4{
+    margin-top: 10px;
+  }
+
   .circle-div{
     z-index: 1;
     position: absolute;
@@ -465,7 +642,122 @@ right: 20px;
      height: 100px;
      width: 100px;
      border-radius: 50%;
+     display: flex;
+     justify-content: center;
+     padding-top: 13px;
+
   }
+  .childimage{
+    width: 70% !important;
+    height: fit-content !important;
+
+  }
+
+  .astrodivider {
+    margin:35px auto;
+    width:80%; 
+    max-width: 100%;
+    position:relative;
+  }
+  
+  .astrodividermask { 
+      overflow:hidden; height:20px; 
+  }
+  
+  .astrodividermask:after { 
+        content:''; 
+        display:block; margin:-25px auto 0;
+        width:100%; height:25px;  
+          border-radius:125px / 12px;
+         box-shadow:0 0 16px rgba(0, 0, 0, 0.3);
+  }
+  .astrodivider span {
+      width:50px; height:50px; 
+      position:absolute; 
+      bottom:100%; margin-bottom:-25px;
+      left:50%; margin-left:-25px;
+      border-radius:100%;
+     box-shadow:0 2px 14px rgba(0, 0, 0, 0.3);
+      background:#fff;
+  }
+  .astrodivider i {
+    position: absolute;
+    top: -9px;
+    /* bottom: 4px; */
+    left: -9px;
+    /* right: 5px; */
+   
+    border-radius: 90%;
+    /* display: contents; */
+    border: 1px solid #081a98;
+    text-align: center;
+    line-height: 27px;
+    font-style: normal;
+    color: #084298;
+
+  }
+
+
+  .app-section{
+    display: flex;
+    flex-direction: row;
+    margin: 40px 20px;
+    padding: 0px;
+    max-width: 100%;
+    max-height: fit-content;
+    justify-content: center;
+    align-items: center;
+  }
+  .app-pic{
+    max-width: 50%;
+    height: auto;
+  }
+
+  .app-content{
+    max-width: 44%;
+    max-height: fit-content;
+    text-align: center;
+    padding: 20px ;
+  }
+  .app-content a{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+
+  .app-content a h5{
+    /* margin-left: 21px; */
+    color: #0070fb;
+  }
+  .app-content p{
+    padding: 7px 42px;
+  }
+  .app-content a i{
+   margin-right: 32px;
+   color: #0070fb;
+   
+  }
+  @media screen and (max-width: 997px) {
+  .app-section{
+    flex-direction: column-reverse;
+  }
+  .app-content{
+    max-width: 100%;
+  }
+  .app-pic{
+    max-width: 100%;
+   
+  }
+   
+  }
+
+  @media screen and (max-width: 997px){
+   .card-div{
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+   }
+  }
+  
   
   /* Index.js End Css  ========================================================== */
 
@@ -481,6 +773,7 @@ right: 20px;
 .pdf-page{
   display: flex;
   justify-content: center;
+  margin-bottom: 300px
 }
 .wrapper{
   width: 430px;
@@ -555,18 +848,32 @@ form p{
   padding: 10px;
   border-radius:20px ;
 }
+.wordtopdfcontent{
+ text-align: justify;
+}
 
-
-
+.wordtopdfcontent h3,h2{
+  color: #0070fb;
+}
 /* Word to Pdf end Css  ========================================================== */
 
 
-/* contact Us to Pdf end Css  ========================================================== */
+/* contact Us to Pdf start Css  ========================================================== */
 .body{
   display: flex;
   flex-wrap: wrap;
-  background-color: DodgerBlue;
-  margin: 60px;
+  justify-content: center;
+  /* height: 100vh; */
+  width: 100%;
+  height: 100%;
+  background-image: url("../public/ui2.jpg");
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ margin:0;
+ padding: 50px 0px;
+
+  
 }
 
 
@@ -623,6 +930,12 @@ textarea{
   color: white;
    
  }
+ .firstcard p{
+  margin: 46px 20px;
+ }
+ .firstcard h3{
+  margin-top: 33px;
+ }
  .btn:hover{
   background-color: blue;
   color: white;
@@ -648,6 +961,7 @@ textarea{
   border-radius: 15px;
   padding: 10px;
   transition: 0.2s;
+  margin-top: 10px;
  }
  i,a{
   font-size: 30px;
@@ -663,10 +977,16 @@ textarea{
  }
  .edifylink:hover{
   transform: scale(1.2);
-  font-size: 27px;
+  /* font-size: 27px; */
  }
  .thirdlinks{
+  /* transform: scale(1.2); */
+  margin: 1px;
+  color: black;
+ }
+ .thirdlinks:hover{
   transform: scale(1.2);
+  /* color: rgb(245, 86, 86); */
   color: rgb(245, 86, 86);
  }
  h3{
@@ -681,22 +1001,23 @@ textarea{
 @media screen and (max-width: 1000px) {
   .firstcard {
     max-width: 800px;
-    margin: auto;
+    /* margin: auto; */
+    margin:20px
     /* display: block; */
     /* margin-bottom: 20px; */
   }
   .secondcard{
     max-width: 600px;
-    margin: auto;
-    margin-top: 20px;
+    margin:20px
+   
   }
 }
 
-@media screen and (max-width: 470px) {
+/* @media screen and (max-width: 470px) {
  .body{
   margin: 20px;
  }
-}
+} */
 
 /* Style the counter cards */
 /* Contatct Us to Pdf end Css  ========================================================== */
@@ -707,13 +1028,8 @@ a {
   color: unset;
   font-size: medium;
 }
-body {
-  /* font-family: "Segoe UI", Tahoma,  Verdana, sans-serif; */
-  font-family: 'Montserrat', sans-serif
-}
-p{
-  font-family: 'Montserrat', sans-serif 
-}
+
+
 body ::-webkit-scrollbar {
   width: 6px;
 }
@@ -763,6 +1079,7 @@ main {
   /* gap: 1rem; */
   flex: 1 0 30%;
   margin-top: 0.4rem;
+  text-align: left;
 
 }
 
@@ -771,8 +1088,11 @@ main {
   cursor: pointer;
   /* font-size: small; */
 }
+.disclaimer-links li a{
+  margin: 0 !important;
+}
 
-.disclaimer-links li.active,
+
 .disclaimer-links li :hover {
   color: rgb(59, 103, 247);
 }
@@ -810,6 +1130,12 @@ main {
 
 /* About Start end Css  ========================================================== */
 
+.about-page{
+  height: max-content;
+    margin-bottom: 370px;
+    padding: 50px 0px
+;
+}
 .About{
   /* background-color: var(--blueMed);
   background-image: url(../../../../public/images/about/aboutBgGlow.webp); */
@@ -819,6 +1145,7 @@ main {
 }
 .flwp{
   color: #000 !important;
+  text-align: justify;
 }
 .about-section {
   margin: 20px auto;
@@ -827,7 +1154,7 @@ main {
   max-width: 1090px;
   text-align: center;
   background-color: #437fee;
-  box-shadow: 0 4px 8px 0 #0070fb;
+  box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
   color: white;
   border-radius: 20px;
 }
@@ -841,7 +1168,7 @@ main {
 .innerpadmain{
   max-width: 1130px;
   padding: 20px 19px;
-  box-shadow: 0 4px 18px 0 #0070fb;
+  box-shadow:0 4px 11px 0 rgb(0, 0, 0  );
   justify-content: center;
   border-radius: 20px;
   margin-right: 20px;
@@ -865,6 +1192,7 @@ main {
   width: 100%;
   height:100%;
   border-radius: 8px;
+  background-image: ('../public/image.png');
   /* background-image: url(../../../../public/images/campus/16.webp); */
   background-repeat: no-repeat;
   background-size: cover;
@@ -971,7 +1299,7 @@ margin: 15px ;
     /* width: 100%; */
     /* display: block;
   } */  
-  .card{
+  .card-about{
     flex-wrap: wrap;
   }
 
@@ -1003,9 +1331,9 @@ margin: 15px ;
   display: flex;
   /* margin-right: 41px; */
   flex-direction: row;
-  margin-left: 30px;
-  box-shadow: 0 4px 20px 0 #0070fb;
-  min-height: 345px;
+  margin-left: 4px;
+  box-shadow: 0 4px 11px 0  rgb(0, 0, 0);
+  min-height: 299px;
 }
 
 /* Some left and right padding inside the container */
@@ -1037,7 +1365,7 @@ margin: 20px;
 .author-links{
 display: flex;
 flex-direction: row;
-margin: 1px 0px 1px 9px;
+margin: -20px 0px 1px 9px;
 }
 .links{
 color: black;
@@ -1054,4 +1382,142 @@ color: rgb(218, 8, 8);
 .links:hover{
 transform: scale(1.2);
 
+}
+
+
+/* Blog css Start  ========================================================== */
+
+
+.blog-container {
+  margin-top: 1rem;
+}
+
+.blog-img {
+  width: 100%;
+  transition: 0.5s all ease-in-out;
+  height: 20vh;
+}
+
+.blog:hover .blog-img {
+  transform: scale(1.03);
+}
+.blog-atag {
+  color: unset;
+  text-decoration: none;
+}
+
+
+
+.text-gray {
+  color: gray;
+  font-size: 14px;
+}
+
+.text-yellow {
+  color: rgb(228, 213, 0);
+  font-weight: 700;
+}
+
+.blog-heading {
+  background-color: #437fee;
+  color: white;
+  max-width: 1080px;
+  margin: auto;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.blogs-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  max-width: 1080px;
+  margin: auto;
+  margin-top: 4rem;
+}
+
+.blog {
+  padding: 0.6rem;
+  box-shadow: 0px 2px 34px -16px rgba(0, 0, 0, 0.73);
+  border-radius: 6px;
+  max-width: 360px;
+}
+
+.blog-title {
+  color: rgb(0, 123, 238);
+  text-transform: uppercase;
+  font-size: 18px;
+  padding: 0.4rem 0;
+}
+
+@media screen and (max-width: 980px) {
+  .blogs-grid {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .blogs-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.calulator{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rounding-calculator {
+ 
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  max-width: 500px;
+  margin: 0 1rem;
+  width: 100%;
+padding: 20px;
+  text-align: center;
+}
+
+.rounding-calculator div {
+  margin: 1rem 0;
+}
+
+.rounding-calculator h2 {
+  text-align: center;
+  margin-top: 2rem;
+  padding: 50px 50px ;
+  color: #437fee;
+}
+
+.rounding-calculator label {
+  display: block;
+  color: #437fee;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.calculator-button {
+  border-radius: 5px;
+  background-color: #120f2d;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 0.4rem 1rem;
+  transition: all 0.3s;
+}
+.calculator-button:hover{
+  transform: scale(1.1);
+}
+.rounding-calculator input{
+  text-align: center;
+  font-size: 20px;
+}
+.rounding-calculator textarea {
+  text-align: center;
+  font-size: 20px;
+  padding: 5px;
+  width: 100%;
 }

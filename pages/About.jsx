@@ -1,11 +1,10 @@
 
-// import EachPageBanner from "../../EachPageBanner/EachPageBanner";
 // import {Link} from 'react-router-dom'
 import Image from "next/image";
 
 const About = () => {
   return (
-    <div>
+    <div className="about-page">
       {/* <EachPageBanner Heading="About Us" bgImg="aboutBanner" /> */}
       <div className="about-section">
         <h1>About Us </h1>
@@ -23,10 +22,10 @@ const About = () => {
               >
                 <p className="folwh">Our Story</p>
                 <h2 className="flwh">
-                  Our Mission is to Provide a World‑className Education.
+                The ultimate PDF solution for students
                 </h2>
                 <p className="flwp ">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque quisquam eveniet corrupti vel totam blanditiis quidem, et, officiis repellendus sunt voluptates provident laboriosam ipsa rerum deleniti error libero? Dolorum, animi.
+                LovePDF is the cloud-based PDF solution for all your document needs! Our International based team of experts are devoted to making managing documents as effortless and stress free as possible. We understand how precious time can be, that's why we've created a 'free & easy' service which has been used by people around the globe. 
                 </p>
               </div>
               <div
@@ -39,63 +38,72 @@ const About = () => {
                       data-toggle="modal"
                       data-target="#exampleModalCenter"
                       className="videoPlayBtn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
                     >
                       <i className="fa-solid fa-play"></i>
                     </button>
                   </div>
                 </div>
+       
+        {/* <!-- Modal --> */}
+        <div
+          className="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div className="modal-dialog modal-dialog-centered modal-xl">
+            <div
+              className="modal-content modalbg"
+              style={{ height: "100vh", background: "none" }}
+            >
+              <div className="modal-header" style={{ borderBottom: "none" }}>
+                <button
+                  type="button"
+                  className="btn-close bg-white"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div className="modal-body">
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src="https://youtu.be/a1f54KO3Aso"
+                  title="Responsive Navbar Tutorial"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+    {/* <!-- Modal --> */}
+
+
               </div>
             </div>
             <div className="row">
               <div className="col-12">
                 <p className="flwp text-justify mt-5">
-                  At {" "}
-                  <strong style={{ color: "var(--blueClr)" }}>
-                    {/* <Link  to="/">
-                  Edify College of IT
-                  </Link> */}
-                  </strong>
-                  , we offer various training programs that introduce students to
-                  the world of information technology so they can better
-                  understand which job role within the sector suits them best. Our
-                  college is located in Faisalabad Pakistan and provides some of
-                  the best facilities for aspiring IT professionals. The
-                  <strong> Edify</strong> college of IT offers a variety of IT
-                  courses that are designed to give students the skills and
-                  knowledge they need to succeed in today's competitive market.
-                  The courses are taught by experienced industry professionals who
-                  have a wealth of experience to share with <strong>Edify</strong>{" "}
-                  students. The college's focus on giving its students the best
-                  possible education has made it a top choice for those seeking a
-                  career in IT. With its excellent facilities and highly qualified
-                  staff, <strong>Edify</strong> College of IT is the perfect place
-                  to get the magnificent skills for student's future.{" "}
-                  <strong>Edify</strong> College of IT's dedication to its
-                  students does not stop after they graduate. The college has an
-                  active career services department that helps graduates find jobs
-                  in their chosen fields. <strong>Edify </strong>
-                  College of IT is also a Platinum member of the British Council,
-                  which gives its graduates access to job postings and internships
-                  from around the country. The <strong>Edify</strong> college of
-                  IT offers several different benefits to its students. These
-                  benefits include:
+                At LovePDF, our goal is to make managing documents as effortless and stress free as possible. With our word to pdf, pdf to word, and excel to pdf conversion services, you can quickly convert any document into the desired format in just a few clicks - without compromising on quality! 
+
+Thanks to our internationally based team of experts, you can rest assured that all documents are converted quickly and accurately. This means you can access them whenever you need them without wasting precious time or energy. 
+
+iLovePDF helps you with all your word to pdf, pdf to word and excel to pdf needs. In just a few clicks, our free & easy service enables you to quickly convert any document into the desired format. We understand how important it is for businesses and individuals alike to be able to access their documents in a timely manner without compromising on quality. That's why our team of experts work hard to ensure that all documents are converted quickly and accurately, so you can access them whenever you need them. We want to make managing documents as simple and stress-free as possible! Try LovePDF and see just how effortless document conversion can be.
+
+Follow us and join the global community of satisfied document users! Our free & easy service is trusted by people around the globe, so why not see what we can do for you? Let us help you save precious time and energy converting word to pdf, pdf to word or excel to pdf! 
+
+Try LovePDF today for the ultimate document conversion experience. Let us show what our free & easy service can do for you! 
+
+
                   <br />
                   <br />
-                  <ul style={{ listStylePosition: "inside" }}>
-                    <li>A variety of IT courses to choose from</li>
-                    <li>Taught by experienced industry professionals</li>
-                    <li>Excellent facilities and qualified staff</li>
-                    <li>
-                      Career services department to help graduates find jobs
-                    </li>
-                    <li>A platinum member of the British Council</li>
-                  </ul>
-                  If you are looking for the best IT education Center that
-                  Faisalabad has to offer, look no further than{" "}
-                  <strong>Edify</strong> College of IT. With its commitment to its
-                  students and dedication to providing them with the best possible
-                  education, <strong>Edify</strong> College of IT is the perfect
-                  choice for those seeking a career in IT.
+                  
+                
                 </p>
               </div>
             </div>
@@ -105,22 +113,22 @@ const About = () => {
               <div className="column">
                 <div className="card-about">
                   <div className="author-info">
-                  <Image className="width" width="200" height="70" src="/image.png" alt="" />
+                  <Image className="width" width="200" height="70" src="/ceoImg.png" alt="" />
 
                   <div className="author-links">
-                   <a className='links'  href=""><i  className="fa-brands fa-facebook"></i> </a>
-                   <a  className='links'  href=""><i className="fa-brands fa-twitter"></i></a>
-                   <a  className='thirdlinks'  href=""><i className="fab fa-instagram"></i> </a>
-                   <a  className='thirdlinks'  href=""><i class="fab fa-youtube"></i> </a>
+                   <a className='links'  href="https://www.facebook.com/edifycitofficials/"><i  className="fa-brands fa-facebook"></i> </a>
+                   <a  className='links'  href="https://twitter.com/EdifyCIT"><i className="fa-brands fa-twitter"></i></a>
+                   <a  className='thirdlinks'  href="https://www.instagram.com/edifycitofficial/"><i className="fab fa-instagram"></i> </a>
+                   <a  className='thirdlinks'  href="https://www.youtube.com/@edifycit"><i class="fab fa-youtube"></i> </a>
                   </div>
                   </div>
                   <div style={{margin:'20px'}} className="container">
-                    <h2>Jane Doe</h2>
+                    <h2>Azeem Qasim</h2>
                     <p className="title">CEO &amp; Founder</p>
-                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                    <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                    <p style={{textAlign:"justify"}}>“Edify group of companies is one of the leading consultancies in Pakistan because it is actively designing solutions for the world’s most ambitious change-makers who will define the future.”</p>
+                    
                    
-                    <p>example@example.com</p>
+                  <a href="info@edify.pk">edifytech4u@gmail.com</a>
 
                   </div>
                 </div>

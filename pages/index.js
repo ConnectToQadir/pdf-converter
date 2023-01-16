@@ -7,36 +7,29 @@ export default function Home() {
   const data = [
     {
       Heading_Number: "01",
-      Title: "Word to Pdf",
-      Connect: "/Wordtopdf"
+      Title: "Binary to Decimal",
+      Connect: "/Converter/Binary",
+      p:"Binary converter helps to convert the values of binary to decimal ",
+      // logo:"/WordtoPDF.webp"
+
     },
     {
       Heading_Number: "02",
-      Title: "Excel to Pdf",
-      Connect: "/exceltopdf"
-
-
-    },
-    {
-      Heading_Number: "03",
-      Title: "PowerPoint to Pdf",
-      Connect: "/ppttopdf"
+      Title: "Text to Binary",
+      Connect: "/Converter/Exceltopdf",
+      p:"Text To Binary Converter convert the text into binary numbers.| binary translator and binary calculator.",
+      //  logo:"/ExceltoPDF.webp"
 
     },
     {
-      Heading_Number: "04",
-      Title: "Image to Pdf",
-      Connect: "/imgtopdf"
-
+      Heading_Number: "02",
+      Title: "Hexa To Binary",
+      Connect: "/Converter/Hexatobinary",
+      p:"Text To Binary Converter convert the text into binary numbers.| binary translator and binary calculator.",
+      //  logo:"/ExceltoPDF.webp"
 
     },
-    {
-      Heading_Number: "05",
-      Title: "Text to Pdf",
-      Connect: "/texttopdf"
-
-
-    }
+   
 
 
   ];
@@ -44,54 +37,63 @@ export default function Home() {
     <>
       <div className="row-heading">
         <div className="col-12 main-headings">
-          <h2 className="heading-main">Edify College Of IT</h2>
-          <h1 className="pdf-heding">PDF CONVERTER</h1>
+          {/* <h2 className="heading-main">Edify College Of IT</h2> */}
+          <h1 className="pdf-heding p-5" >LovePDF releases all-in-one set of powerful yet easy-to-use PDF tools.</h1>
         </div>
       </div>
 
-      <div className="card-div justify-content-center mx-5">
-        <div className="row container row-div  p-3 mt-5">
+      <div className="card-div  mx-5 pt-5">
+        <div className="card-container">
+       
           {data.map((value, index) => {
             return (
               <>
-
-                <div
-                  className="p-4  mb-5 col-xl-4 col-lg-4 col-md-6 col-sm-12 mt-3 card-main-number"
-                  key={index}
-                >
-
-                  <div
-                    className="card"
-                    style={{ width: "18rem", border: "none", height: "17rem" }}
-                  >
-                    <h1 className="number-heading">{value.Heading_Number}</h1>
-                    <div className="card card-main pt-3 pb-3" style={{ width: "18rem", height: "22rem" }}>
-                      <div className="border-gradient justify-content-center" style={{ width: "16rem", height: "21rem" }}>
+               <Link href={value.Connect} className="card card-main" style={{ width: "17rem", height: "16rem" }} key={index} >
+                      <div className="border-gradient justify-content-center" style={{ width: "16rem", height: "20rem" }}>
                         <div className="card-body">
                           <h4 className="card-title">{value.Title}</h4>
 
-                          <p className="card-text">
-                            Some quick example text to build on the card title and
-                            make up the bulk of the card's content.
+                          <p className="card-text pt-3">
+                           {value.p}
                           </p>
 
-                          <Link href={value.Connect}><div className="circle-div ">
+                          <div >
+                            <div className="circle-div ">
                             <div className="circle-chiled">
-
+                            {/* <Image className="img-fluid childimage" width={50} height={50} src={value.logo} alt="icon-image" /> */}
                             </div>
                           </div>
-                          </Link>
+                          </div>
 
                         </div>
                       </div>
-                    </div>
-                  </div>
-                </div>
+                    </Link>
+                   
               </>
             );
           })}
         </div>
+      
+        <div class="astrodivider"><div class="astrodividermask"></div><span><i>&#10038;</i></span></div>
+
+        <div className="app-section">
+          <div className="app-pic">
+            <Image className="img-fluid app-img " width={400} height={400} src='/apppic.webp'/>
+          </div>
+          <div className="app-content">
+            <h2>Looking for another solution ?</h2>
+            <h3>Love Pdf Mobile</h3>
+            <p>LovePDF is introducing the new suite of mobile PDF tools. The app, which is available on both Android and iOS, provides users with a variety of features to make working with PDFs easier. LovePDF is committed to providing users with the best possible experience when working with PDFs and the new mobile app is just another step in that direction.   </p>
+            <h5>Download Mobile App</h5>
+            <Link href="lovepdf.app.com">
+            <Image className="mt-3 mb-2" width="200" height="70" src="/google_play.svg" alt="" />
+             <h5>Love Pdf Mobile</h5> 
+             </Link>
+          </div>
+        </div>
+        
       </div>
+      
     </>
   );
 }

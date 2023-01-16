@@ -1,16 +1,33 @@
-import { useState } from "react";
-
+import { useState ,useRef,useEffect} from "react";
+import NavDropdown from 'react-bootstrap/NavDropdown';
 import Link from "next/link";
 import Image from "next/image"
 const NavBar = () => {
+   const ref=useRef(null)
+
     const [mobNavLinks, setMobNavLinks] = useState("");
 const [Dropdown, setDropdown] = useState("")
   const navLinksToggle = () => {
     mobNavLinks === "none" ? setMobNavLinks("block") : setMobNavLinks("none");
   };
   const dropdowntoogel = () => {
-    Dropdown === "none" ? setDropdown("block") : setDropdown("none");
+    // Dropdown === "none" ? setDropdown("block") : setDropdown("none");
   };
+   
+  useEffect(()=>{
+    document.addEventListener('click' , handleclickoutside,true)
+  },[])
+
+  const refone= ref;
+   const handleclickoutside=(e)=>{
+    if(!refone.current.contains(e.target)){
+      // setMobNavLinks("none")
+      setDropdown("none")
+    }else{
+      // setMobNavLinks("block")
+      setDropdown("block")
+    }
+   } 
   return (
     
    <>
@@ -18,7 +35,7 @@ const [Dropdown, setDropdown] = useState("")
       <nav>
         <div className="logo">
           <Link href="/">
-            <Image className="width" width="200" height="70" src="/logo.png" alt="" />
+            <Image className="width" width="200" height="70" src="/logos.png" alt="" />
           </Link>
         </div>
         <div className="barsDiv" onClick={navLinksToggle}>
@@ -36,9 +53,12 @@ const [Dropdown, setDropdown] = useState("")
             <li>
              
             </li>
-            <div className="dropdown">
+            <div className="dropdown"
+             ref={refone}
+             >
               <button
                 className="dropdown-toggle"
+               
                 onClick={dropdowntoogel}
               >
                Services
@@ -48,21 +68,16 @@ const [Dropdown, setDropdown] = useState("")
               
                 style={{ display: Dropdown }}
               >
-                <Link className="dropdown-item" href="/Wordtopdf">
-                  Word to Pdf
+                <Link className="dropdown-item" href="/Converter/Binary">
+                  Binary To Decimal
                 </Link>
-                <Link className="dropdown-item" href="/exceltopdf">
-                Excel to Pdf
+                <Link className="dropdown-item" href="/Converter/TextBinary">
+                Text to Binary
                 </Link>
-                <Link className="dropdown-item" href="/ppttopdf">
-                PowerPoint to Pdf
+                <Link className="dropdown-item" href="/Converter/Hexatobinary">
+                Hexa to Binary
                 </Link>
-                <Link className="dropdown-item" href="/imgtopdf">
-                Image to Pdf
-                </Link>
-                <Link className="dropdown-item" href="/texttopdf">
-                Text to Pdf
-                </Link>
+                
                 
               </div>
             </div>
@@ -80,7 +95,7 @@ const [Dropdown, setDropdown] = useState("")
             <Link href="/Disclaimer">Disclaimer</Link>
             </li>
             <li>
-              <Link href="/FAQ">FAQ's</Link>
+              <Link href="/Blogs">Blogs</Link>
               
             </li>
             

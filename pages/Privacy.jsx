@@ -8,7 +8,7 @@ function Privacy() {
     <div> <div className="container p-5">
     <div className="row border border-2">
         <h1 className="text-white p-3 text-center"
-        style={{backgroundColor: "#060159"}}
+        style={{backgroundColor: "#437fee"}}
          >
             Privacy Policy for Edify Group Of Companies</h1>
 <p>At Ilovepdf, accessible from ilovepdf.io, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by Ilovepdf and how we use it.</p>
