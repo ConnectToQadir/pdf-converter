@@ -1177,9 +1177,13 @@ main {
 
 .About .modal-body{
   padding:2;
-  background-color: #eee;
+  background-color: transparent;
+  height: 40vh;
 }
-
+.about-vedio{
+  width: 50vw;
+  height: 50vh;
+}
 .aboutLeftContentSection h2{
   margin:20px 0px;
 }
@@ -1378,7 +1382,7 @@ margin: -3px;
 }
 .author-links .thirdlinks{
 color: black;
-margin: 9px;
+margin: 12px;
 }
 .thirdlinks:hover{
 transform: scale(1.2);

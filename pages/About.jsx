@@ -66,16 +66,8 @@ const About = () => {
                   aria-label="Close"
                 ></button>
               </div>
-              <div className="modal-body">
-                <iframe
-                  width="100%"
-                  height="100%"
-                  src="https://youtu.be/a1f54KO3Aso"
-                  title="Responsive Navbar Tutorial"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
-                ></iframe>
+              <div className="modal-body modal-dialog modal-lg">
+              <iframe className="about-vedio" src="https://www.youtube.com/embed/a1f54KO3Aso" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
               </div>
             </div>
           </div>
