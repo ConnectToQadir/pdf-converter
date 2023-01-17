@@ -1337,10 +1337,15 @@ margin: 15px ;
 }
 
 /* Some left and right padding inside the container */
-.container {
+.CEO-Message {
   padding: 0 16px;
 }
-
+@media (max-width:650px) {
+  .CEO-Message {
+display: none; 
+ }
+  
+}
 /* Clear floats */
 .container::after, .row::after {
   content: "";
@@ -1373,7 +1378,7 @@ margin: -3px;
 }
 .author-links .thirdlinks{
 color: black;
-margin: -3px;
+margin: 9px;
 }
 .thirdlinks:hover{
 transform: scale(1.2);

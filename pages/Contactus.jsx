@@ -4,7 +4,12 @@ const Contactus = () => {
   return (
     <>
      <div>
+     <div className="about-section">
+        <h1>Contact Us </h1>
+      
+      </div>
       <div className="body">
+      
         <div className='firstcard' >
 
           <h4>Join our team</h4>

@@ -10,22 +10,14 @@ const Footer = () => {
      <div className="left-box mx-5">
      
        <div className="topic">Company</div>
-       <div><Link className='footer-tag' href="#"> About Us</Link></div>
-       <div><Link className='footer-tag' href="#">Contact Us</Link></div>
-       <div><Link className='footer-tag' href="#">Privcy And Policy</Link></div>
-       <div><Link className='footer-tag' href="#">Disclaimer</Link></div>
-       <div><Link className='footer-tag' href="#">Blogs</Link></div>
+       <div><Link className='footer-tag' href="/About"> About Us</Link></div>
+       <div><Link className='footer-tag' href="/Contactus">Contact Us</Link></div>
+       <div><Link className='footer-tag' href="/Privacy">Privacy And Policy</Link></div>
+       <div><Link className='footer-tag' href="/Disclaimer">Disclaimer</Link></div>
+       <div><Link className='footer-tag' href="/Blogs">Blogs</Link></div>
      
      
-       <div className="lower">
-         <div className="topic">Contact us</div>
-         <div className="phone">
-           <Link className='footer-tag' href="#"><i className=" social-media-icons fas fa-phone-volume"></i>+92-346-7897340</Link>
-         </div>
-         <div className="email">
-           <Link className='footer-tag' href="#"><i className="social-media-icons fas fa-envelope"></i>edifytech4u@gmail.com</Link>
-         </div>
-       </div>
+       
      </div>
      <div className="middle box">
        <div className="topic">Our Services</div>
@@ -42,11 +34,11 @@ const Footer = () => {
          <input type="text" placeholder="Enter email address"/>
          <input type="submit" name="" value="Send"/>
          <div className="media-icons">
-           <Link href="#"><i className="fab fa-facebook-f social-media-icons"></i></Link>
-           <Link href="#"><i className="fab fa-instagram social-media-icons"></i></Link>
-           <Link href="#"><i className="fab fa-twitter social-media-icons"></i></Link>
-           <Link href="#"><i className="fab fa-youtube social-media-icons"></i></Link>
-           <Link href="#"><i className="fab fa-linkedin-in social-media-icons"></i></Link>
+           <Link href="https://www.facebook.com/edifycitofficials"><i className="fab fa-facebook-f social-media-icons"></i></Link>
+           <Link href="https://www.instagram.com/edifycit_officials/"><i className="fab fa-instagram social-media-icons"></i></Link>
+           <Link href="https://twitter.com/EdifyCIT"><i className="fab fa-twitter social-media-icons"></i></Link>
+           <Link href="https://www.youtube.com/@edifycit"><i className="fab fa-youtube social-media-icons"></i></Link>
+           <Link href="https://www.linkedin.com/company/edify-college-of-it/mycompany/"><i className="fab fa-linkedin-in social-media-icons"></i></Link>
          </div>
        </form>
      </div>

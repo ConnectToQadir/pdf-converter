@@ -4,11 +4,10 @@ import Link from 'next/link'
 const Blogs = () => {
   return (
    <>
-    <div className="blog-container mt-4">
-      <div className="blog-heading">
-        <h1>Blog</h1>
+   <div className="about-section">
+        <h1>Blogs </h1>
+      
       </div>
-    </div>
     <div className="blogs-grid mb-5">
       <div className="blog">
             <Image className="blog-img" width="200" height="70" src="/blog-img.jpg" alt="" />

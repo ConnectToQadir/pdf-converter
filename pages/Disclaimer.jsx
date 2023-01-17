@@ -6,7 +6,10 @@ function Disclaimer() {
 
     return (
         <>
+       
+
             <main>
+                
             <div className="disclaimer-container">
                 <div className="disclaimer-inner">
                     <ol className="disclaimer-links">

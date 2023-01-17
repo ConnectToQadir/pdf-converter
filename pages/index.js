@@ -16,7 +16,7 @@ export default function Home() {
     {
       Heading_Number: "02",
       Title: "Text to Binary",
-      Connect: "/Converter/Exceltopdf",
+      Connect: "/Converter/TextBinary",
       p:"Text To Binary Converter convert the text into binary numbers.| binary translator and binary calculator.",
       //  logo:"/ExceltoPDF.webp"
 
@@ -37,7 +37,7 @@ export default function Home() {
     <>
       <div className="row-heading">
         <div className="col-12 main-headings">
-          {/* <h2 className="heading-main">Edify College Of IT</h2> */}
+          
           <h1 className="pdf-heding p-5" >LovePDF releases all-in-one set of powerful yet easy-to-use PDF tools.</h1>
         </div>
       </div>
@@ -60,7 +60,7 @@ export default function Home() {
                           <div >
                             <div className="circle-div ">
                             <div className="circle-chiled">
-                            {/* <Image className="img-fluid childimage" width={50} height={50} src={value.logo} alt="icon-image" /> */}
+                           
                             </div>
                           </div>
                           </div>

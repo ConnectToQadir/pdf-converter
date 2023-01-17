@@ -5,12 +5,13 @@ import React from 'react'
 function Privacy() {
 
   return (<>
+   <div className="about-section">
+        <h1>Privacy And Policy </h1>
+      
+      </div>
     <div> <div className="container p-5">
     <div className="row border border-2">
-        <h1 className="text-white p-3 text-center"
-        style={{backgroundColor: "#437fee"}}
-         >
-            Privacy Policy for Edify Group Of Companies</h1>
+        
 <p>At Ilovepdf, accessible from ilovepdf.io, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by Ilovepdf and how we use it.</p>
 
 <p>If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us.</p>

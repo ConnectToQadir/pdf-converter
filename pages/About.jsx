@@ -5,11 +5,10 @@ import Image from "next/image";
 const About = () => {
   return (
     <div className="about-page">
-      {/* <EachPageBanner Heading="About Us" bgImg="aboutBanner" /> */}
+    
       <div className="about-section">
         <h1>About Us </h1>
-        {/* <p>Some text about who we are and what we do.</p>
-        <p>Resize the browser window to see that this page is responsive by the way.</p> */}
+      
       </div>
 
       <div className="About">
@@ -122,7 +121,7 @@ Try LovePDF today for the ultimate document conversion experience. Let us show w
                    <a  className='thirdlinks'  href="https://www.youtube.com/@edifycit"><i class="fab fa-youtube"></i> </a>
                   </div>
                   </div>
-                  <div style={{margin:'20px'}} className="container">
+                  <div style={{margin:'20px'}} className="CEO-Message">
                     <h2>Azeem Qasim</h2>
                     <p className="title">CEO &amp; Founder</p>
                     <p style={{textAlign:"justify"}}>“Edify group of companies is one of the leading consultancies in Pakistan because it is actively designing solutions for the world’s most ambitious change-makers who will define the future.”</p>
